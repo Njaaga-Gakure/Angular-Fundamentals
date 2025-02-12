@@ -1,0 +1,103 @@
+<main class="add-jobs">
+  <section class="add-jobs__center content-center">
+    <h1 class="add-job__title">add job</h1>
+    <form class="form">
+      <div class="form__row">
+        <label class="form__label" for="job-type">Job Type</label>
+        <select class="form__input" id="job-type" name="job-type">
+          <option value="Full-Time">Full-Time</option>
+          <option value="Part-Time">Part-Time</option>
+          <option value="Remote">Remote</option>
+          <option value="Internship">Internship</option>
+        </select>
+      </div>
+      <div class="form__row">
+        <label class="form__label" for="listing-name">Job Listing Name</label>
+        <input
+          class="form__input"
+          type="text"
+          id="listing-name"
+          name="listing-name"
+          placeholder="eg. Senior Angular Dev"
+        />
+      </div>
+      <div class="form__row">
+        <label class="form__label" for="location">location</label>
+        <input
+          class="form__input"
+          type="text"
+          id="location"
+          name="location"
+          placeholder="Company Location"
+        />
+      </div>
+      <div class="form__row">
+        <label class="form__label" for="description">description</label>
+        <textarea
+          class="form__input"
+          id="description"
+          name="description"
+          rows="4"
+          cols="50"
+          placeholder="Add any job duties, expectations, requirements, etc"
+        ></textarea>
+      </div>
+
+      <div class="form__row">
+        <label class="form__label" for="salary">Salary</label>
+        <select class="form__input" id="salary" name="salary">
+          <option value="under $50K">under $50K</option>
+          <option value="$50 - $60K">$50 - $60K</option>
+          <option value="$70 - $80K">$70 - $80K</option>
+          <option value="Over $200K">Over $200K</option>
+        </select>
+      </div>
+      <h3 class="form__title">Company Info</h3>
+      <div class="form__row">
+        <label class="form__label" for="company-name">Company Name</label>
+        <input
+          class="form__input"
+          type="text"
+          id="company-name"
+          name="company-name"
+          placeholder="Company Name"
+        />
+      </div>
+      <div class="form__row">
+        <label class="form__label" for="contact-email">Contact Email</label>
+        <input
+          class="form__input"
+          type="email"
+          id="contact-email"
+          name="contact-email"
+          placeholder="Contact Email"
+        />
+      </div>
+      <div class="form__row">
+        <label class="form__label" for="contact-phone">Contact Phone</label>
+        <input
+          class="form__input"
+          type="tel"
+          id="contact-phone"
+          name="contact-phone"
+          placeholder="Contact Phone"
+        />
+      </div>
+
+      <div class="form__row">
+        <label class="form__label" for="company-description"
+          >Company Description</label
+        >
+        <textarea
+          class="form__input"
+          id="company-description"
+          name="company-description"
+          rows="4"
+          cols="50"
+          placeholder="What does your company do?"
+        ></textarea>
+      </div>
+      <button class="form__btn">add job</button>
+    </form>
+  </section>
+</main>

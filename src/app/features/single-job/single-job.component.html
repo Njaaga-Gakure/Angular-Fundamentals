@@ -1,0 +1,65 @@
+<section>
+  <div class="job content-center">
+    <main class="main">
+      <div class="job-details">
+        <div class="job-details__type">{{ job.type }}</div>
+        <h1 class="job-details__title">{{ job.title }}</h1>
+        <div class="location-container">
+          <i class="pi pi-map-marker job-details__icon"></i>
+          <p class="job-details__location">{{ job.location }}</p>
+        </div>
+      </div>
+
+      <div class="job-description">
+        <h3 class="job-description__title">Job Description</h3>
+
+        <p class="job-description__text">
+          {{ job.description }}
+        </p>
+
+        <h3 class="salary-heading">Salary</h3>
+
+        <p class="job-description__salary">{{ job.salary }} / Year</p>
+      </div>
+    </main>
+
+    <aside class="sidebar">
+      <div class="company">
+        <h3 class="company__title">Company Info</h3>
+
+        <h2 class="company__sub-title">{{ job.company.name }}</h2>
+
+        <p class="company__description">
+          {{ job.company.description }}
+        </p>
+
+        <hr />
+
+        <h3 class="company__label email-label">Contact Email:</h3>
+
+        <p class="company__email">
+          {{ job.company.contactEmail }}
+        </p>
+
+        <h3 class="company__label">Contact Phone:</h3>
+
+        <p class="company__phone">{{ job.company.contactPhone }}</p>
+      </div>
+
+      <div class="job-actions">
+        <h3 class="job-actions__title">Manage Job</h3>
+        <a
+          [routerLink]="['/jobs/edit/', job.id]"
+          class="job-actions__btn job-actions__btn--edit"
+          >Edit Job</a
+        >
+        <button
+          (click)="deleteJob(job.id)"
+          class="job-actions__btn job-actions__btn--delete"
+        >
+          Delete Job
+        </button>
+      </div>
+    </aside>
+  </div>
+</section>

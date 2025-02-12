@@ -1,0 +1,41 @@
+.home-card {
+  background-color: #f3f4f6;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-card--accent {
+  background-color: #d1fae5;
+}
+
+.home-card__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.home-card__sub-title {
+  letter-spacing: 0.5px;
+  margin: 0.5rem 0;
+}
+
+.home-card__link {
+  display: inline-block;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.home-card__link:hover {
+  background-color: #4b5563;
+}
+
+.home-card__link--accent {
+  background-color: #22c55e;
+}
+
+.home-card__link--accent:hover {
+  background-color: #16a34a;
+}

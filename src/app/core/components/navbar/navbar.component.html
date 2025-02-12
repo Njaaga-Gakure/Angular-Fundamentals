@@ -1,0 +1,17 @@
+<nav class="nav">
+  <div class="nav__center content-center">
+    <a class="nav__logo" routerLink="/">
+      <span class="logo__text">Angular Jobs</span>
+    </a>
+    <div class="nav__links">
+      <a
+        class="nav__link"
+        *ngFor="let link of navLinks"
+        routerLinkActive="nav__link--active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        [routerLink]="link.path"
+        >{{ link.label }}</a
+      >
+    </div>
+  </div>
+</nav>

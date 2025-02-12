@@ -1,0 +1,72 @@
+.job-listing {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding: 1rem;
+}
+
+.listing__header {
+  margin: 1rem 0;
+}
+
+.listing__status {
+  color: #4b5563;
+}
+
+.listing__role {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.listing__description,
+.listing__salary {
+  margin-bottom: 0.5rem;
+}
+
+.toggle-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.description__toggle-btn {
+  background: none;
+  border: none;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  color: #10b981;
+}
+
+.listing__salary {
+  color: #10b981;
+}
+
+.listing__footer {
+  margin-top: 1rem;
+}
+
+.listing__location {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #c2410c;
+  margin-bottom: 0.5rem;
+}
+
+.listing__link {
+  display: inline-block;
+  height: 36px;
+  width: 100%;
+  background-color: #10b981;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.listing__link:hover {
+  background-color: #16a34a;
+}

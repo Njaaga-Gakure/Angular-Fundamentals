@@ -1,0 +1,14 @@
+<article [ngClass]="['home-card', card.isAccent ? 'home-card--accent' : '']">
+  <h2 class="home-card__title">{{ card.title }}</h2>
+  <p class="home-card__sub-title">
+    {{ card.subTitle }}
+  </p>
+  <a
+    [routerLink]="card.link.path"
+    [ngClass]="[
+      'home-card__link',
+      card.isAccent ? 'home-card__link--accent' : ''
+    ]"
+    >{{ card.link.label }}</a
+  >
+</article>

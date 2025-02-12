@@ -1,0 +1,13 @@
+<section class="job-listings">
+  <div class="job-listings__header">
+    <h2 class="job-listings__title">Browse Jobs</h2>
+  </div>
+  <div class="job-listings__center content-center">
+    <div *ngFor="let jobListing of jobListings">
+      <app-job-listing [singleJobListing]="jobListing"></app-job-listing>
+    </div>
+  </div>
+  <section *ngIf="showViewJobs" class="button-container">
+    <a href="/jobs" class="btn">View All Jobs</a>
+  </section>
+</section>

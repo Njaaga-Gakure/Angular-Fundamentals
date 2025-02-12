@@ -1,0 +1,15 @@
+.home-cards {
+  padding: 3rem 0;
+}
+
+.home-cards__center {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 800px) {
+  .home-cards__center {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}

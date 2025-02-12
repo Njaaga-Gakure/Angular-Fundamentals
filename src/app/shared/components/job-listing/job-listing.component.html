@@ -1,0 +1,28 @@
+<div class="job-listing">
+  <div class="listing__header">
+    <div class="listing__status">{{ singleJobListing.title }}</div>
+    <h3 class="listing__role">{{ singleJobListing.title }}</h3>
+  </div>
+  <p class="listing__description">
+    {{ singleJobListing.description | truncate : 90 : showFullDescription }}
+  </p>
+  <div class="toggle-btn-container">
+    <button
+      class="description__toggle-btn"
+      (click)="toggleShowFullDescription()"
+    >
+      {{ showFullDescription ? "show less" : "show more" }}
+    </button>
+  </div>
+  <p class="listing__salary">{{ singleJobListing.salary }} / Year</p>
+  <hr />
+  <div class="listing__footer">
+    <div class="listing__location">
+      <i class="pi pi-map-marker"></i>
+      {{ singleJobListing.location }}
+    </div>
+    <a [routerLink]="['/jobs', singleJobListing.id]" class="listing__link">
+      Read More
+    </a>
+  </div>
+</div>
